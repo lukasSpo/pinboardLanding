@@ -147,12 +147,25 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(/intro-bg.jpeg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.intro img.brand {
+    max-width: 100%;
+}
+
+.intro-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
 }
 
 .intro .intro-body {

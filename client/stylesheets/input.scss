@@ -16,11 +16,23 @@ $color: #1abc9c;
 //   box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
 // }
 
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+    background-color: #5C5292;
+    border-color: #5C5292;
+}
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: #474266;
+    border-color: #474266;
+}
+.brand {
+    margin-bottom: 30px;
+}
+
 form {
   box-sizing: border-box;
-  width: 260px;
-  margin: 100px auto 0;
-  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+  width: 300px;
+  margin: 0 auto 0;
   padding-bottom: 40px;
   border-radius: 3px;
   h1 {
@@ -30,29 +42,12 @@ form {
 }
 
 input {
-  margin: 40px 25px;
-  width: 200px;
+  margin: 10px 25px;
+  width: 250px;
   display: block;
   border: none;
   padding: 10px 0;
   border-bottom: solid 1px $color;
-  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color 4%);
-  background-position: -200px 0;
-  background-size: 200px 100%;
-  background-repeat: no-repeat;
-  color: darken($color, 20%);
-  &:focus, &:valid {
-    box-shadow: none;
-    outline: none;
-    background-position: 0 0;
-    &::-webkit-input-placeholder {
-      color: $color;
-      font-size: 11px;
-      transform: translateY(-20px);
-      visibility: visible !important;
-    }
-  }
 }
 
 button {
@@ -61,14 +56,11 @@ button {
   cursor: pointer;
   border-radius: 3px;
   padding: 6px;
-  width: 200px;
-  color: white;
+  width: 250px;
+  border-bottom: 0;
+  background: none;
+  color: white !important;
   margin-left: 25px;
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
-  &:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
-  }
 }
 
 .follow {
