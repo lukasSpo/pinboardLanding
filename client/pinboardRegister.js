@@ -38,4 +38,6 @@ Template.pinboardRegister.onRendered = function(){
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
     });
+
+    analytics.page('landing');
   }
