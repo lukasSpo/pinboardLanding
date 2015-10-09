@@ -12,10 +12,11 @@ Template.pinboardRegister.helpers({
 });
 
   Template.pinboardRegister.events({
-    "click #foo": function(event, template){
-
+    "click a.page-scroll": function(event, template){
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      event.preventDefault();
     }
-  }); 
+  });
 
 Template.pinboardRegister.onRendered = function(){
       /*!
@@ -31,17 +32,6 @@ Template.pinboardRegister.onRendered = function(){
         } else {
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
         }
-    });
-
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $(function() {
-        $('a.page-scroll').bind('click', function(event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 1500, 'easeInOutExpo');
-            event.preventDefault();
-        });
     });
 
     // Closes the Responsive Menu on Menu Item Click
