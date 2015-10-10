@@ -39,5 +39,4 @@ Template.pinboardRegister.onRendered = function(){
         $('.navbar-toggle:visible').click();
     });
 
-    analytics.page('landing');
   }
